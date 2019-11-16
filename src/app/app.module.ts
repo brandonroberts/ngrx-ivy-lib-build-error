@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
+import { MyLibModule } from 'my-lib';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { EffectsModule } from '@ngrx/effects';
         strictActionImmutability: true
       }
     }),
-    EffectsModule.forRoot([])
+    EffectsModule.forRoot([]),
+    MyLibModule
   ],
   providers: [],
   bootstrap: [AppComponent]
